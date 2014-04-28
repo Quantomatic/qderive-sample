@@ -1,12 +1,14 @@
 open RG_SimpUtil
 
+
 val simps = load_ruleset [
-  "axioms/red_copy", "axioms/red_sp", "axioms/green_sp", "axioms/hopf",
+  "axioms/red_copy", "axioms/red_sp", "axioms/green_sp", "theorems/multi_hopf",
   "axioms/red_scalar", "axioms/green_scalar", "axioms/green_id",
-  "axioms/red_id"
+  "axioms/red_id", "axioms/red_loop", "axioms/green_loop"
 ];
 
 register_simproc ("basic_simp", REDUCE_ALL simps)
+
 
 
 
