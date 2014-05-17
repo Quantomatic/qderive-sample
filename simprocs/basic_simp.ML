@@ -8,8 +8,7 @@ val simps = load_ruleset [
 ];
 
 
-register_simproc ("basic_simp", REDUCE_ALL simps)
-
+register_simproc ("basic_simp", REDUCE_ALL simps);
 
 
 
